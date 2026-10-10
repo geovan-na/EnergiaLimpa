@@ -142,10 +142,9 @@ export default function App() {
             type="button" 
             className="btn-menu-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Abrir Menu"
+            aria-label={mobileMenuOpen ? 'Fechar Menu' : 'Abrir Menu'}
           >
-            {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
-            <span>Menu</span>
+            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </header>
@@ -161,10 +160,11 @@ export default function App() {
           </div>
           <button 
             type="button" 
-            className="btn-menu-toggle"
+            className="btn-drawer-close"
             onClick={() => setMobileMenuOpen(false)}
+            aria-label="Fechar Menu"
           >
-            <X size={20} />
+            <X size={22} />
           </button>
         </div>
         <nav className="drawer-nav">
@@ -174,6 +174,16 @@ export default function App() {
           <a href="#simulador" className="drawer-link" onClick={() => setMobileMenuOpen(false)}>Simulador Solar</a>
           <a href="#contato" className="drawer-link" onClick={() => setMobileMenuOpen(false)}>Fale com Especialistas</a>
         </nav>
+        <div className="drawer-footer">
+          <a 
+            href="#simulador" 
+            className="btn-primary-solar" 
+            style={{ width: '100%', justifyContent: 'center' }}
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Calcular Economia
+          </a>
+        </div>
       </div>
 
       {/* Hero Section with Video Background */}
