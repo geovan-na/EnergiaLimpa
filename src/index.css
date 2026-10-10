@@ -28,21 +28,16 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-sans);
-  background-color: var(--bg-dark);
+  background-color: #ffffff;
   color: var(--text-main);
   -webkit-font-smoothing: antialiased;
 }
 
 body {
   min-height: 100vh;
-  background-color: var(--bg-dark);
-  padding: 16px 20px 40px;
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 8px 8px 24px;
-  }
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 /* Custom scrollbar */
