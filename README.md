@@ -54,7 +54,7 @@ O setor de energia solar frequentemente sofre com sites com visual desatualizado
 | Funcionalidade | Descrição |
 | :--- | :--- |
 | **Hero Imersivo com Vídeo** | Apresentação institucional com reprodução de vídeo em loop de alta definição, tipografia imponente e métricas de impacto direto. |
-| **Diagrama de Arquitetura de Microgeração** | Seção inspirada em plantas técnicas demonstrando a interligação entre painéis solares, turbinas eólicas e hubs de controle central. |
+| **Diagrama de Arquitetura de Microgeração** | Seção inspirada em plantas técnicas demonstrando a interligação entre painéis fotovoltaicos, banco de baterias LiFePO4 e hubs de controle central. |
 | **Showcase de Mobilidade Elétrica (EV)** | Destaque visual para estações de carregamento veicular integradas à geração própria de energia. |
 | **Catálogo Interativo de Soluções (Abas Dinâmicas)** | Navegação fluida entre os 5 pilares de produto (Sistemas Solares, Baterias Híbridas, EMS & Smart Homes, EV Charging e Integração Turnkey). |
 | **Diferenciais e Filosofia de Engenharia** | Exposição dos 4 pilares: Precisão Técnica, Responsabilidade, Estética Arquitetônica e Individualidade. |

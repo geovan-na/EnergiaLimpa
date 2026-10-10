@@ -159,22 +159,22 @@ export default function App() {
           muted 
           playsInline
         >
-          <source src={`${baseUrl}hero_bg.mp4`} type="video/mp4" />
+          <source src={`${baseUrl}solar_hero_clean.mp4`} type="video/mp4" />
         </video>
         <div className="hero-overlay-gradient"></div>
 
         <div className="hero-content">
           <div className="hero-tag">
             <Sparkles size={14} />
-            <span>Ecossistema Energético Sustentável</span>
+            <span>Ecossistema Energético Solar & Armazenamento</span>
           </div>
 
           <h1 className="hero-title">
-            Energia inteligente para o futuro da sua vida
+            Energia solar inteligente para o futuro da sua vida
           </h1>
 
           <p className="hero-description">
-            O lar e a empresa ideal combinam energia solar fotovoltaica de alta eficiência, armazenamento em baterias e controle inteligente, onde todos os sistemas atuam em perfeita harmonia.
+            O lar e a empresa ideal combinam geração solar fotovoltaica de alta eficiência, armazenamento em baterias e controle inteligente, onde todos os sistemas atuam em perfeita harmonia.
           </p>
 
           <div className="hero-actions">
@@ -194,7 +194,7 @@ export default function App() {
             </div>
             <div className="metric-item">
               <span className="metric-value">25 Anos</span>
-              <span className="metric-label">Garantia de geração</span>
+              <span className="metric-label">Garantia de geração solar</span>
             </div>
             <div className="metric-item">
               <span className="metric-value">100% Limpa</span>
@@ -209,18 +209,18 @@ export default function App() {
         <div className="blueprint-header">
           <div>
             <span className="section-label">• Sobre a Plataforma</span>
-            <h2 className="section-heading">Arquitetura integrada de microgeração e autossuficiência</h2>
+            <h2 className="section-heading">Arquitetura integrada de microgeração solar e autossuficiência</h2>
           </div>
           <p className="section-subtext">
-            Engenharia de precisão que converte radiação solar e correntes de vento em fluxo elétrico limpo, estabilizado e distribuído sob demanda.
+            Engenharia de precisão que converte radiação solar em fluxo elétrico limpo, estabilizado em baterias e distribuído sob demanda.
           </p>
         </div>
 
         <div className="blueprint-canvas-container">
           <div className="blueprint-grid-overlay"></div>
           <img 
-            src={`${baseUrl}blueprint_clean_nologo.png`} 
-            alt="Arquitetura de Engenharia de Energia Solar e Baterias" 
+            src={`${baseUrl}blueprint_pure_solar.png`} 
+            alt="Arquitetura de Engenharia de Energia Solar Fotovoltaica e Baterias" 
             className="blueprint-image"
           />
         </div>
