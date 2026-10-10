@@ -25,12 +25,13 @@ export default function App() {
   const [contactSubmitted, setContactSubmitted] = useState(false);
 
   // Services matching the exact design structure
+  const baseUrl = import.meta.env.BASE_URL;
   const services = [
     {
       id: 1,
       title: 'Sistemas Solares Fotovoltaicos',
       shortTitle: 'Solar systems',
-      image: '/solar_installation.png',
+      image: `${baseUrl}solar_installation.png`,
       badge: 'Geração Alta Eficiência',
       description: 'Projetamos e instalamos módulos fotovoltaicos premium de alta performance, otimizados para máxima captação solar e durabilidade estrutural mesmo em condições extremas de calor e umidade.',
       details: ['Células monocristalinas Tier 1', 'Garantia de geração de 25 anos', 'Estrutura aerodinâmica anticorrosiva']
@@ -39,7 +40,7 @@ export default function App() {
       id: 2,
       title: 'Baterias Híbridas de Armazenamento',
       shortTitle: 'Hybrid batteries',
-      image: '/battery_system.png',
+      image: `${baseUrl}battery_system.png`,
       badge: 'Autonomia 24/7',
       description: 'Bancos de baterias inteligentes de lítio ferro fosfato (LiFePO4) que armazenam o excedente diurno para alimentar sua residência à noite e garantir energia ininterrupta contra oscilações e apagões.',
       details: ['Ciclos ultra duradouros (>6000 ciclos)', 'Troca de carga em menos de 10ms', 'Design discreto e seguro indoor/outdoor']
@@ -48,7 +49,7 @@ export default function App() {
       id: 3,
       title: 'EMS & Gestão Inteligente de Energia',
       shortTitle: 'EMS & smart homes',
-      image: '/blueprint_clean_nologo.png',
+      image: `${baseUrl}blueprint_clean_nologo.png`,
       badge: 'Controle em Tempo Real',
       description: 'Sistema operacional centralizado com algoritmos preditivos de IA que equilibra automaticamente consumo, recarga de bateria e exportação à rede para minimizar seus custos ao máximo.',
       details: ['App móvel com telemetria ao vivo', 'Previsão solar baseada em clima', 'Integração com automação residencial']
@@ -57,7 +58,7 @@ export default function App() {
       id: 4,
       title: 'Estações de Carregamento Veicular (EV)',
       shortTitle: 'EV charging',
-      image: '/ev_charging.png',
+      image: `${baseUrl}ev_charging.png`,
       badge: 'Mobilidade Verde',
       description: 'Wallboxes e eletropostos inteligentes integrados diretamente à geração fotovoltaica, permitindo abastecer veículos elétricos e híbridos 100% com energia limpa captada pelo próprio telhado.',
       details: ['Carregamento rápido Nível 2 até 22kW', 'Sincronização com excedente solar', 'Compatibilidade universal Tipo 2']
@@ -66,7 +67,7 @@ export default function App() {
       id: 5,
       title: 'Integração Turnkey & Engenharia Completa',
       shortTitle: 'Turnkey integration',
-      image: '/solar_installation.png',
+      image: `${baseUrl}solar_installation.png`,
       badge: 'Solução de Ponta a Ponta',
       description: 'Cuidamos de tudo: análise de viabilidade técnica, projeto elétrico civil, homologação formal junto à concessionária de energia, comissionamento e manutenção preventiva contínua.',
       details: ['Homologação técnica regulamentar', 'Monitoramento ativo de saúde do sistema', 'Suporte técnico especializado']
@@ -158,7 +159,7 @@ export default function App() {
           muted 
           playsInline
         >
-          <source src="/hero_bg.mp4" type="video/mp4" />
+          <source src={`${baseUrl}hero_bg.mp4`} type="video/mp4" />
         </video>
         <div className="hero-overlay-gradient"></div>
 
@@ -218,7 +219,7 @@ export default function App() {
         <div className="blueprint-canvas-container">
           <div className="blueprint-grid-overlay"></div>
           <img 
-            src="/blueprint_clean_nologo.png" 
+            src={`${baseUrl}blueprint_clean_nologo.png`} 
             alt="Arquitetura de Engenharia de Energia Solar e Baterias" 
             className="blueprint-image"
           />
@@ -242,7 +243,7 @@ export default function App() {
       {/* EV Banner Section */}
       <section className="ev-showcase-section">
         <img 
-          src="/ev_charging.png" 
+          src={`${baseUrl}ev_charging.png`} 
           alt="Carregamento de Veículo Elétrico com Energia Solar" 
           className="ev-image"
         />
@@ -360,7 +361,7 @@ export default function App() {
 
           <div className="pillars-visual">
             <img 
-              src="/battery_system.png" 
+              src={`${baseUrl}battery_system.png`} 
               alt="Módulos de Bateria e Inversor Solar Integrados" 
               className="pillars-img"
             />
