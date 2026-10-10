@@ -97,7 +97,7 @@ export default function App() {
               <circle cx="18" cy="18" r="3.5" fill="currentColor"/>
             </svg>
           </div>
-          <span className="brand-title">Siriteja</span>
+          <span className="brand-title">EnergiaLimpa</span>
         </a>
 
         <nav className="nav-links-desktop">
@@ -131,7 +131,7 @@ export default function App() {
       <div className={`mobile-drawer ${mobileMenuOpen ? 'open' : ''}`}>
         <div className="drawer-header">
           <div className="brand-wrapper">
-            <span className="brand-title">Siriteja</span>
+            <span className="brand-title">EnergiaLimpa</span>
           </div>
           <button 
             type="button" 
@@ -234,7 +234,7 @@ export default function App() {
               Nosso propósito é desenhar a transição energética definitiva: combinar a potência natural com hardware robusto e software intuitivo, entregando liberdade e segurança energética real.
             </p>
             <p className="philosophy-quote">
-              "Siriteja" provém das raízes ancestrais Sri ("prosperidade, bênção") e Teja ("energia, radiância luminosa").
+              "EnergiaLimpa": gerando autonomia energética, prosperidade e preservação ambiental para as próximas gerações.
             </p>
           </div>
         </div>
@@ -319,9 +319,9 @@ export default function App() {
         </div>
       </section>
 
-      {/* Section 4: Why Siriteja - 4 Pillars */}
+      {/* Section 4: Why EnergiaLimpa - 4 Pillars */}
       <section id="pilares" className="pillars-section">
-        <span className="section-label">• Por Que a Siriteja</span>
+        <span className="section-label">• Por Que a EnergiaLimpa</span>
         <h2 className="section-heading">Para nós, não existem detalhes secundários</h2>
 
         <div className="pillars-grid">
@@ -520,7 +520,7 @@ export default function App() {
       <footer className="site-footer">
         <div className="footer-top">
           <div className="footer-brand">
-            <h3 className="footer-title">Siriteja Energia Solar</h3>
+            <h3 className="footer-title">EnergiaLimpa</h3>
             <p style={{ fontSize: '14px', lineHeight: '1.6' }}>
               Pioneirismo em soluções de energia limpa, independência tarifária e mobilidade sustentável de última geração.
             </p>
@@ -532,7 +532,7 @@ export default function App() {
               <a href="#hero" style={{ color: '#94a3b8', textDecoration: 'none' }}>Início</a>
               <a href="#sobre" style={{ color: '#94a3b8', textDecoration: 'none' }}>Sobre a Arquitetura</a>
               <a href="#servicos" style={{ color: '#94a3b8', textDecoration: 'none' }}>Nossas Soluções</a>
-              <a href="#pilares" style={{ color: '#94a3b8', textDecoration: 'none' }}>Por que Siriteja</a>
+              <a href="#pilares" style={{ color: '#94a3b8', textDecoration: 'none' }}>Por que EnergiaLimpa</a>
               <a href="#simulador" style={{ color: '#94a3b8', textDecoration: 'none' }}>Simulador de Economia</a>
             </div>
           </div>
@@ -549,7 +549,7 @@ export default function App() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Siriteja Renewable Energy. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} EnergiaLimpa Renewable Energy. Todos os direitos reservados.</p>
           <p>Projeto Integrador - Técnico em Desenvolvimento de Sistemas | Senac</p>
         </div>
       </footer>

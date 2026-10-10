@@ -11,7 +11,7 @@
 
 ## Descrição do Projeto
 
-O **EnergiaLimpa (Siriteja)** é uma Landing Page moderna, de alta performance e totalmente responsiva voltada para a conscientização, demonstração e simulação de ecossistemas integrados de energia solar fotovoltaica e energias renováveis. 
+O **EnergiaLimpa** é uma Landing Page moderna, de alta performance e totalmente responsiva voltada para a conscientização, demonstração e simulação de ecossistemas integrados de energia solar fotovoltaica e energias renováveis. 
 
 Inspirada em referências internacionais de excelência em UI/UX e design de sistemas solares de alto padrão, a aplicação integra vídeo de fundo realista e fluído, esquemas arquiteturais de microgeração, apresentação de hardware sustentável (geração solar, bancos de baterias inteligentes LiFePO4, carregadores veiculares EV e gestão preditiva de consumo) e um simulador financeiro interativo de economia na conta de luz.
 
