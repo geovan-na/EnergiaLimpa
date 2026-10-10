@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { 
   Sun, 
   BatteryCharging, 
@@ -14,7 +13,8 @@ import {
   PhoneCall,
   CheckCircle2,
   TrendingDown,
-  Leaf
+  Leaf,
+  MessageCircle
 } from 'lucide-react';
 import './App.css';
 
@@ -23,6 +23,17 @@ export default function App() {
   const [activeService, setActiveService] = useState(0);
   const [energyBill, setEnergyBill] = useState(650);
   const [contactSubmitted, setContactSubmitted] = useState(false);
+
+  // Contact form state
+  const [formData, setFormData] = useState({
+    nome: '',
+    email: '',
+    telefone: '',
+    tipoImovel: 'Residência / Condomínio',
+    mensagem: ''
+  });
+
+  const WHATSAPP_NUMBER = '5561985964802';
 
   // Services matching the exact design structure
   const baseUrl = import.meta.env.BASE_URL;
@@ -81,6 +92,21 @@ export default function App() {
   const handleContactSubmit = (e) => {
     e.preventDefault();
     setContactSubmitted(true);
+
+    // Format message for WhatsApp
+    const message = 
+      `*Olá, EnergiaLimpa! Gostaria de solicitar um estudo de energia solar:*\n\n` +
+      `👤 *Nome:* ${formData.nome}\n` +
+      `📧 *E-mail:* ${formData.email}\n` +
+      `📱 *Telefone:* ${formData.telefone}\n` +
+      `🏠 *Tipo de Imóvel:* ${formData.tipoImovel}\n` +
+      `💬 *Mensagem/Detalhes:* ${formData.mensagem || 'Gostaria de mais informações sobre viabilidade e economia.'}`;
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank');
+
     setTimeout(() => {
       setContactSubmitted(false);
     }, 6000);
@@ -455,7 +481,8 @@ export default function App() {
           <form className="contact-form" onSubmit={handleContactSubmit}>
             {contactSubmitted && (
               <div className="form-alert-success">
-                ✓ Solicitação enviada com sucesso! Nossos engenheiros entrarão em contato em breve.
+                <CheckCircle2 size={18} color="#10b981" />
+                <span>✓ Solicitação enviada! Abrindo seu WhatsApp para atendimento direto...</span>
               </div>
             )}
 
@@ -466,6 +493,8 @@ export default function App() {
                 required 
                 placeholder="Ex.: Carolina Silva" 
                 className="form-input"
+                value={formData.nome}
+                onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
               />
             </div>
 
@@ -476,6 +505,8 @@ export default function App() {
                 required 
                 placeholder="carolina@exemplo.com.br" 
                 className="form-input"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               />
             </div>
 
@@ -484,18 +515,24 @@ export default function App() {
               <input 
                 type="tel" 
                 required 
-                placeholder="(11) 98765-4321" 
+                placeholder="(61) 98596-4802" 
                 className="form-input"
+                value={formData.telefone}
+                onChange={(e) => setFormData({ ...formData, telefone: e.target.value })}
               />
             </div>
 
             <div className="form-group">
               <label className="form-label">Tipo de Imóvel</label>
-              <select className="form-select" defaultValue="residencial">
-                <option value="residencial">Residência / Condomínio</option>
-                <option value="comercial">Comércio / Escritório</option>
-                <option value="industrial">Indústria / Galpão</option>
-                <option value="rural">Propriedade Rural</option>
+              <select 
+                className="form-select" 
+                value={formData.tipoImovel}
+                onChange={(e) => setFormData({ ...formData, tipoImovel: e.target.value })}
+              >
+                <option value="Residência / Condomínio">Residência / Condomínio</option>
+                <option value="Comércio / Escritório">Comércio / Escritório</option>
+                <option value="Indústria / Galpão">Indústria / Galpão</option>
+                <option value="Propriedade Rural">Propriedade Rural</option>
               </select>
             </div>
 
@@ -505,12 +542,14 @@ export default function App() {
                 rows="3" 
                 placeholder="Conte-nos se você já possui veículo elétrico ou interesse em baterias..."
                 className="form-textarea"
+                value={formData.mensagem}
+                onChange={(e) => setFormData({ ...formData, mensagem: e.target.value })}
               ></textarea>
             </div>
 
-            <button type="submit" className="btn-submit-form">
-              <span>Enviar Pedido de Estudo</span>
-              <ArrowRight size={18} />
+            <button type="submit" className="btn-submit-form" style={{ backgroundColor: '#25D366', color: '#ffffff' }}>
+              <MessageCircle size={20} />
+              <span>Enviar via WhatsApp (61 98596-4802)</span>
             </button>
           </form>
         </div>
