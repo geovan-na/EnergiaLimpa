@@ -31,7 +31,7 @@ export default function App() {
       id: 1,
       title: 'Sistemas Solares Fotovoltaicos',
       shortTitle: 'Solar systems',
-      image: `${baseUrl}solar_installation.png`,
+      image: `${baseUrl}solar_installation.jpg`,
       badge: 'Geração Alta Eficiência',
       description: 'Projetamos e instalamos módulos fotovoltaicos premium de alta performance, otimizados para máxima captação solar e durabilidade estrutural mesmo em condições extremas de calor e umidade.',
       details: ['Células monocristalinas Tier 1', 'Garantia de geração de 25 anos', 'Estrutura aerodinâmica anticorrosiva']
@@ -40,7 +40,7 @@ export default function App() {
       id: 2,
       title: 'Baterias Híbridas de Armazenamento',
       shortTitle: 'Hybrid batteries',
-      image: `${baseUrl}battery_system.png`,
+      image: `${baseUrl}battery_system.jpg`,
       badge: 'Autonomia 24/7',
       description: 'Bancos de baterias inteligentes de lítio ferro fosfato (LiFePO4) que armazenam o excedente diurno para alimentar sua residência à noite e garantir energia ininterrupta contra oscilações e apagões.',
       details: ['Ciclos ultra duradouros (>6000 ciclos)', 'Troca de carga em menos de 10ms', 'Design discreto e seguro indoor/outdoor']
@@ -49,7 +49,7 @@ export default function App() {
       id: 3,
       title: 'EMS & Gestão Inteligente de Energia',
       shortTitle: 'EMS & smart homes',
-      image: `${baseUrl}blueprint_clean_nologo.png`,
+      image: `${baseUrl}ems_system.jpg`,
       badge: 'Controle em Tempo Real',
       description: 'Sistema operacional centralizado com algoritmos preditivos de IA que equilibra automaticamente consumo, recarga de bateria e exportação à rede para minimizar seus custos ao máximo.',
       details: ['App móvel com telemetria ao vivo', 'Previsão solar baseada em clima', 'Integração com automação residencial']
@@ -58,7 +58,7 @@ export default function App() {
       id: 4,
       title: 'Estações de Carregamento Veicular (EV)',
       shortTitle: 'EV charging',
-      image: `${baseUrl}ev_charging.png`,
+      image: `${baseUrl}ev_charging.jpg`,
       badge: 'Mobilidade Verde',
       description: 'Wallboxes e eletropostos inteligentes integrados diretamente à geração fotovoltaica, permitindo abastecer veículos elétricos e híbridos 100% com energia limpa captada pelo próprio telhado.',
       details: ['Carregamento rápido Nível 2 até 22kW', 'Sincronização com excedente solar', 'Compatibilidade universal Tipo 2']
@@ -67,7 +67,7 @@ export default function App() {
       id: 5,
       title: 'Integração Turnkey & Engenharia Completa',
       shortTitle: 'Turnkey integration',
-      image: `${baseUrl}solar_installation.png`,
+      image: `${baseUrl}turnkey_team.jpg`,
       badge: 'Solução de Ponta a Ponta',
       description: 'Cuidamos de tudo: análise de viabilidade técnica, projeto elétrico civil, homologação formal junto à concessionária de energia, comissionamento e manutenção preventiva contínua.',
       details: ['Homologação técnica regulamentar', 'Monitoramento ativo de saúde do sistema', 'Suporte técnico especializado']
@@ -243,7 +243,7 @@ export default function App() {
       {/* EV Banner Section */}
       <section className="ev-showcase-section">
         <img 
-          src={`${baseUrl}ev_charging.png`} 
+          src={`${baseUrl}ev_charging.jpg`} 
           alt="Carregamento de Veículo Elétrico com Energia Solar" 
           className="ev-image"
         />
@@ -361,7 +361,7 @@ export default function App() {
 
           <div className="pillars-visual">
             <img 
-              src={`${baseUrl}battery_system.png`} 
+              src={`${baseUrl}battery_system.jpg`} 
               alt="Módulos de Bateria e Inversor Solar Integrados" 
               className="pillars-img"
             />
@@ -422,31 +422,31 @@ export default function App() {
       {/* Section 6: Contact & Quotation Form */}
       <section id="contato" className="contact-section">
         <div className="contact-grid">
-          <div>
+          <div className="contact-info-col">
             <span className="section-label">• Contato & Consultoria</span>
             <h2 className="section-heading">Vamos transformar a forma como você consome energia</h2>
             <p className="section-subtext" style={{ marginTop: '16px' }}>
               Entre em contato com nossos especialistas em energia renovável para receber um dimensionamento personalizado sem compromisso.
             </p>
 
-            <div style={{ marginTop: '32px', display: 'flex', flexDirection: 'column', gap: '18px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-                <div style={{ width: 42, height: 42, borderRadius: 8, background: '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0f172a' }}>
-                  <ShieldCheck size={20} />
+            <div style={{ marginTop: '36px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <div className="contact-benefit-card">
+                <div className="contact-benefit-icon">
+                  <ShieldCheck size={22} />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: '15px', color: '#0f172a', fontWeight: 600 }}>Garantia de Performance</h4>
-                  <p style={{ fontSize: '13px', color: '#64748b' }}>Equipamentos testados e homologados pelos órgãos reguladores.</p>
+                  <h4 style={{ fontSize: '15px', color: '#0f172a', fontWeight: 700, marginBottom: '2px' }}>Garantia de Performance</h4>
+                  <p style={{ fontSize: '13.5px', color: '#64748b', lineHeight: '1.4' }}>Equipamentos de padrão industrial testados e homologados pelos órgãos reguladores.</p>
                 </div>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-                <div style={{ width: 42, height: 42, borderRadius: 8, background: '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0f172a' }}>
-                  <TrendingDown size={20} />
+              <div className="contact-benefit-card">
+                <div className="contact-benefit-icon">
+                  <TrendingDown size={22} />
                 </div>
                 <div>
-                  <h4 style={{ fontSize: '15px', color: '#0f172a', fontWeight: 600 }}>Blindagem Tarifária</h4>
-                  <p style={{ fontSize: '13px', color: '#64748b' }}>Fique protegido contra aumentos abusivos e bandeiras tarifárias.</p>
+                  <h4 style={{ fontSize: '15px', color: '#0f172a', fontWeight: 700, marginBottom: '2px' }}>Blindagem Tarifária</h4>
+                  <p style={{ fontSize: '13.5px', color: '#64748b', lineHeight: '1.4' }}>Fique protegido contra aumentos abusivos, escassez hídrica e bandeiras tarifárias.</p>
                 </div>
               </div>
             </div>
