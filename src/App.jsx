@@ -526,7 +526,7 @@ export default function App() {
               <input 
                 type="tel" 
                 required 
-                placeholder="(61) 98596-4802" 
+                placeholder="(00) 00000-0000" 
                 className="form-input"
                 value={formData.telefone}
                 onChange={(e) => setFormData({ ...formData, telefone: e.target.value })}
@@ -560,7 +560,7 @@ export default function App() {
 
             <button type="submit" className="btn-submit-form" style={{ backgroundColor: '#25D366', color: '#ffffff' }}>
               <MessageCircle size={20} />
-              <span>Enviar via WhatsApp (61 98596-4802)</span>
+              <span>Enviar via WhatsApp</span>
             </button>
           </form>
         </div>
